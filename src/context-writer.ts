@@ -5,7 +5,7 @@ import path from "path";
 import os from "os";
 import { getAllFacts, searchMemory } from "./memory.js";
 
-const CONTEXT_FILE = path.join(os.homedir(), ".openclaw-sherra", "workspace", "memory", "mem0-context.md");
+const CONTEXT_FILE = path.join(os.homedir(), ".openclaw-sherra", "projects", "memory", "mem0-context.md");
 
 export async function writeContextFile() {
   const facts = getAllFacts(0.65);

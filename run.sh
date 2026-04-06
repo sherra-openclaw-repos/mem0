@@ -1,7 +1,7 @@
 #!/bin/bash
 # mem0 extraction runner — called by systemd timer
 set -e
-cd /home/openclaw/.openclaw-sherra/workspace/mem0
+cd /home/openclaw/.openclaw-sherra/projects/mem0
 
 source /home/openclaw/.openclaw-sherra/secrets.sh
 

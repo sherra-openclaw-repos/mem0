@@ -8,7 +8,7 @@ async function getEmbedder() {
   // Dynamically import to allow lazy loading
   const { pipeline: createPipeline, env } = await import("@xenova/transformers");
   // Cache models in workspace dir
-  env.cacheDir = "/home/openclaw/.openclaw-sherra/workspace/mem0/.model-cache";
+  env.cacheDir = "/home/openclaw/.openclaw-sherra/projects/mem0/.model-cache";
   env.allowRemoteModels = true;
   pipeline = await createPipeline("feature-extraction", "Xenova/all-MiniLM-L6-v2");
   return pipeline;

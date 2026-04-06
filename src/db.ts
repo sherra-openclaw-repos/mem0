@@ -3,7 +3,7 @@ import path from "path";
 import os from "os";
 import fs from "fs";
 
-const DB_DIR = path.join(os.homedir(), ".openclaw-sherra", "workspace", "mem0");
+const DB_DIR = path.join(os.homedir(), ".openclaw-sherra", "projects", "mem0");
 const DB_PATH = path.join(DB_DIR, "memory.db");
 
 fs.mkdirSync(DB_DIR, { recursive: true });
